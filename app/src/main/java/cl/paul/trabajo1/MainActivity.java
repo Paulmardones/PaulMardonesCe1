@@ -11,11 +11,14 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
      ImageButton btSpa;
+    ImageButton german;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btSpa=(ImageButton) findViewById(R.id.btSpa);
+        german =(ImageButton) findViewById(R.id.german);
+        Intent intent2 = new Intent(this, MainActivity3.class);
         Intent intent = new Intent(this, MainActivity2.class);
          btSpa.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -24,7 +27,12 @@ public class MainActivity extends AppCompatActivity {
              }
          });
 
-
+        german.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent2);
+            }
+        });
 
 
     }

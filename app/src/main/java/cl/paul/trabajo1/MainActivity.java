@@ -20,19 +20,9 @@ public class MainActivity extends AppCompatActivity {
         german =(ImageButton) findViewById(R.id.german);
         Intent intent2 = new Intent(this, MainActivity3.class);
         Intent intent = new Intent(this, MainActivity2.class);
-         btSpa.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 startActivity(intent);
-             }
-         });
+         btSpa.setOnClickListener(view -> startActivity(intent));
 
-        german.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(intent2);
-            }
-        });
+        german.setOnClickListener(view -> startActivity(intent2));
 
 
     }

@@ -15,11 +15,6 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         atras =(ImageButton) findViewById(R.id.atras);
         Intent intent4 = new Intent(this,MainActivity.class);
-        atras.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(intent4);
-            }
-        });
+        atras.setOnClickListener(view -> startActivity(intent4));
     }
 }

@@ -15,12 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         btatras  =(ImageButton) findViewById(R.id.btatras);
         Intent intent3 = new Intent(this,MainActivity.class);
-        btatras.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(intent3);
-            }
-        });
+        btatras.setOnClickListener(view -> startActivity(intent3));
 
     }
 }
